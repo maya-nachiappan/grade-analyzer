@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6CDFEDAB2CB4A7D6003A668A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6CDFEDAA2CB4A7D6003A668A /* main.cpp */; };
+		6CDFEDB32CB4A806003A668A /* analyzeGrades.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6CDFEDB12CB4A806003A668A /* analyzeGrades.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		6CDFEDA72CB4A7D6003A668A /* grade analyzer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "grade analyzer"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CDFEDAA2CB4A7D6003A668A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		6CDFEDB12CB4A806003A668A /* analyzeGrades.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = analyzeGrades.cpp; sourceTree = "<group>"; };
+		6CDFEDB22CB4A806003A668A /* analyzeGrades.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = analyzeGrades.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				6CDFEDAA2CB4A7D6003A668A /* main.cpp */,
+				6CDFEDB12CB4A806003A668A /* analyzeGrades.cpp */,
+				6CDFEDB22CB4A806003A668A /* analyzeGrades.hpp */,
 			);
 			path = "grade analyzer";
 			sourceTree = "<group>";
@@ -119,6 +124,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CDFEDB32CB4A806003A668A /* analyzeGrades.cpp in Sources */,
 				6CDFEDAB2CB4A7D6003A668A /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
