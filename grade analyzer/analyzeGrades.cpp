@@ -10,11 +10,13 @@
 using namespace std;
 
 void analyzeGrades(const char names[][50], const int grades[], int numberOfStudents) {
-    if (numberOfStudents == 0) {
+    if (numberOfStudents == 0) // if there are no students
+    {
         cout << "No grades to analyze." << endl;
         return;
     }
 
+// initializes variables
     int totalGrades = 0;
     int highest = grades[0];
     int lowest = grades[0];
@@ -25,10 +27,10 @@ void analyzeGrades(const char names[][50], const int grades[], int numberOfStude
     for (int i = 0; i < numberOfStudents; ++i) {
         totalGrades += grades[i];
         if (grades[i] > highest) {
-            highest = grades[i];
+            highest = grades[i]; // continues to check for highest grade
         }
         if (grades[i] < lowest) {
-            lowest = grades[i];
+            lowest = grades[i]; // continues to check for lowest grade
         }
     }
 
@@ -43,16 +45,17 @@ void analyzeGrades(const char names[][50], const int grades[], int numberOfStude
         }
     }
 
-    // Output the results
+    // prints the results the results
     cout << "Average grade: " << average << endl;
     cout << "Highest grade: " << highest << endl;
     cout << "Lowest grade: " << lowest << endl;
 
     cout << "Students above average: ";
-    if (aboveAverageCount == 0) {
+    if (aboveAverageCount == 0) // if no students are above average
+    {
         cout << "None" << endl;
     } else {
-        for (int i = 0; i < aboveAverageCount; ++i) {
+        for (int i = 0; i < aboveAverageCount; ++i) { // prints the name of the above average students
             cout << aboveAverageStudents[i] << " ";
         }
         cout << endl;
