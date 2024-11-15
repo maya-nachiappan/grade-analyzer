@@ -14,16 +14,18 @@ using namespace std;
 int main() {
     
     // initializing variables
-    const int MAX_STUDENTS = 50;
-    char studentNames[MAX_STUDENTS][50]; // creates an array for student names
-    int studentGrades[MAX_STUDENTS];       // creates an array for student grades
+    const int maxStudents = 50;
+    char studentNames[maxStudents][50]; // creates an array for student names
+    // change char to string
+    int studentGrades[maxStudents];// creates an array for student grades
+    // change int to double
     int numberOfStudents;
 
     // Ask the user for the number of students
-    cout << "Enter the number of students (max " << MAX_STUDENTS << "): ";
+    cout << "Enter the number of students (max " << maxStudents << "): ";
     cin >> numberOfStudents;
 
-    if (numberOfStudents > MAX_STUDENTS) // if the user input exceeds the number of students
+    if (numberOfStudents > maxStudents) // if the user input exceeds the number of students
     {
         cout << "Error: Exceeded maximum number of students." << endl;
         return 1;
